@@ -2,15 +2,15 @@
 # including some code snippets below that you should find helpful
 
 import scraperwiki
- #import lxml.html
+import lxml.html
 #
 # # Read in a page
- #html = "<head></head><body><div>alma</div></body>"
- #scraperwiki.scrape("http://google.com")
+html = "<head></head><body><div>alma</div></body>"
+#scraperwiki.scrape("http://google.com")
 #
 # Find something on the page using css selectors
 # root = lxml.html.fromstring(html)
- #root.cssselect("div")
+root.cssselect("div")
 #
 # # Write out to the sqlite database using scraperwiki library
  scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
